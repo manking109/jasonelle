@@ -10,7 +10,7 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "http://carolsrecipebox.com/",
+            "url": "http://carolsrecipebox.com",
             "action": {
               "type": "$default"
             }
