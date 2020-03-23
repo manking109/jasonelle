@@ -10,7 +10,7 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "https://aasn.org",
+            "url": "http://carolsrecipebox.com/",
             "action": {
               "type": "$default"
             }
