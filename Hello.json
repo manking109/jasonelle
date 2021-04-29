@@ -10,7 +10,7 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "https://aasn.com",
+            "url": "https://aasn.org",
             "action": {
               "type": "$default"
             }
