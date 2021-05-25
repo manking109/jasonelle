@@ -1,0 +1,23 @@
+{
+  "$jason": {
+    "head": {
+      "actions": {
+        "$load": {
+          "type": "$render",
+        }
+      },
+      "templates": {
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "http://test.com",
+            "action": {
+              "type": "$default"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/home/manuelking/Git/jasonelle
