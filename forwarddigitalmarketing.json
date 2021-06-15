@@ -14,9 +14,7 @@
             "action": {
               "type": "$default"
              }
-            { "type": "$onesignal.set",
-"options": { "externalid": "YOUREXTERNALID" }
-        }
+            
           }
         }
       }
