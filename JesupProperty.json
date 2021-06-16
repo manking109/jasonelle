@@ -10,15 +10,18 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "http://www.jesupproperty.com",
+            "url": "https://www.jesupproperty.com",
             "action": {
               "type": "$default"
-            }
+            },
+            "action": {
+              "type": "$onesignal.set",
+              "options": { "externalid": "YOUREXTERNALID" }
+              }
           }
         }
       }
     }
   }
 }
-/home/manuelking/Git/jasonelle
 
