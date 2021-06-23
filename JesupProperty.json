@@ -13,11 +13,7 @@
             "url": "https://www.jesupproperty.com",
             "action": {
               "type": "$default"
-            },
-            "action": {
-              "type": "$onesignal.set",
-              "options": { "externalid": "YOUREXTERNALID" }
-              }
+            }
           }
         }
       }
