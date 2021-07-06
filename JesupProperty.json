@@ -1,22 +1,42 @@
+
 {
     "$jason": {
         "head": {
-            "title": "Web Container Agent Demo",
+            "title": "Web Container Native Transition",
             "actions": {
                 "$load": {
-                    "type": "$agent.request",
+                    "type": "$set",
                     "options": {
-                        "id": "$webcontainer",
-                        "method": "add",
-                        "params": ["a", "b"]
+                        "url": [{
+                            "{{#if $params && 'url' in $params}}": "{{$params.url}}"
+                        }, {
+                            "{{#else}}": "https://www.jesupproperty.com"
+                        }]
+                    },
+                    "success": {
+                        "type": "$render"
+                    }
+                },
+                "navigate": {
+                    "type": "$href",
+                    "options": {
+                        "url": "file://native_transition.json",
+                        "options": {
+                            "url": "{{$jason.url}}"
+                        }
                     }
                 }
-            }
-        },
-        "body": {
-            "background": {
-                "type": "html",
-                "url": "https://www.jesupproperty.com"
+            },
+            "templates": {
+                "body": {
+                    "background": {
+                        "type": "html",
+                        "url": "{{$get.url}}",
+                        "action": {
+                            "trigger": "navigate"
+                        }
+                    }
+                }
             }
         }
     }
